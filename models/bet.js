@@ -5,8 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
         defaultValue: 0
       }
-    }
-  });
+    });
 
   Bet.associate = function(models) {
     // We're saying that a Post should belong to an Author
