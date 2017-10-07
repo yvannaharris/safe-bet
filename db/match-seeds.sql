@@ -1,0 +1,78 @@
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Tony Ferguson', 'Kevin Lee', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Kevin Lee', 'Tony Ferguson', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Demetrious Johnson', 'Ray Borg', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Ray Borg', 'Demetrious Johnson', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Fabricio Werdum', 'Derrick Lewis', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Derrick Lewis', 'Fabricio Werdum', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Mara Romero Borella', 'Kalindra Faria', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Kalindra Faria', 'Mara Romero Borella', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Beneil Dariush', 'Evan Dunham', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Evan Dunham', 'Beneil Dariush', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Tom Duquesnoy', 'Cody Stamann', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Cody Stamann', 'Tom Duquesnoy', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Lando Vannata', 'Bobby Green', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Bobby Green', 'Lando Vannata', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Pearl Gonzalez', 'Poliana Botelho', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Poliana Botelho', 'Pearl Gonzalez', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Matt Schnell', 'Marco Beltran', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Marco Beltran', 'Matt Schnell', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Walt Harris', 'Mark Godbeer', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Mark Godbeer', 'Walt Harris', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('John Moraga', 'Magomed Bibulatov', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Magomed Bibulatov', 'John Moraga', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Thales Leites', 'Brad Tavares', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Brad Tavares', 'Thales Leites', 'TBD', 1, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+
+
+
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Donald Cerrone', 'Darren Till', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Darren Till', 'Donald Cerrone', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Karolina Kowalkiewicz', 'Jodie Esquibel', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jodie Esquibel', 'Karolina Kowalkiewicz', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jan Blachowicz', 'Devin Clark', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Devin Clark', 'Jan Blachowicz', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jonathan Wilson', 'Oskar Piechota', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Oskar Piechota', 'Jonathan Wilson', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Marcin Held', 'Teemu Packalen', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Teemu Packalen', 'Marcin Held', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Dmitrii Smoliakov', 'Adam Wieczorek', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Adam Wieczorek', 'Dmitrii Smoliakov', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Damian Stasiak', 'Brian Kelleher', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Brian Kelleher', 'Damian Stasiak', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Trevor Smith', 'Ramazan Emeev', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Ramazan Emeev', 'Trevor Smith', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Artem Lobov', 'Andre Fili', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Andre Fili', 'Artem Lobov', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jimmy Wallhead', 'Warlley Alves', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Warlley Alves', 'Jimmy Wallhead', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Lina Lansberg', 'Aspen Ladd', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Aspen Ladd', 'Lina Lansberg', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Felipe Arantes', 'Josh Emmett', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Josh Emmett', 'Felipe Arantes', 'TBD', 2, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+
+
+
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Derek Brunson', 'Lyoto Machida', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Lyoto Machida', 'Derek Brunson', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Demian Maia', 'Colby Covington', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Colby Covington', 'Demian Maia', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Pedro Munhoz', 'Rob Font', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Rob Font', 'Pedro Munhoz', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Francisco Trinaldo', 'Jim Miller', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jim Miller', 'Francisco Trinaldo', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Thiago Santos', 'Jack Hermansson', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jack Hermansson', 'Thiago Santos', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('John Lineker', 'Marlon Vera', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Marlon Vera', 'John Lineker', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Luan Chagas', 'Niko Price', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Niko Price', 'Luan Chagas', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Augusto Mendes', 'Boston Salmon', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Boston Salmon', 'Augusto Mendes', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Antonio Carlos Junior', 'Jack Marshman', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jack Marshman', 'Antonio Carlos Junior', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Elizeu Zaleski dos Santos', 'Max Griffin', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Max Griffin', 'Elizeu Zaleski dos Santos', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Hacran Dias', 'Jared Gordon', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jared Gordon', 'Hacran Dias', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Deiveson Figueiredo', 'Jarred Brooks', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
+INSERT INTO matches (fighter, opponent, result, EventId, createdAt, updatedAt) VALUES ('Jarred Brooks', 'Deiveson Figueiredo', 'TBD', 3, '2017-09-30 17:31:27', '2017-09-30 17:31:27');
