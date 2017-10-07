@@ -1,7 +1,6 @@
 var db = require("../models");
 
 module.exports = function(app) {
-    var query = {};
     app.get("/api/users", (req, res) => {
         db.User.findAll({}).then((dbUser) => {
             res.json(dbUser);
@@ -15,7 +14,7 @@ module.exports = function(app) {
     });
 
     app.post("/api/users/", (req, res) => {
-        db.User.insertOne(req.body.name).then((dbUser) => {
+        db.User.insertOne(req.body.name, req.body.password).then((dbUser) => {
             res.json(dbUser);
         });
     });
