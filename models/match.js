@@ -32,6 +32,10 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       }
     });
+
+    Match.hasMany(models.Bet, {
+      onDelete: "cascade"
+    });
   };
 
   return Match;
