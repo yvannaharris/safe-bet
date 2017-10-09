@@ -16,11 +16,11 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
 
-    Bet.belongsTo(models.Match) {
+    Bet.belongsTo(models.Match ,{
       foreignKey: {
         allowNull: false
       }
-    }
+    });
   };
 
   return Bet;
