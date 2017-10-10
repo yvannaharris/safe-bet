@@ -15,6 +15,13 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [1]
       }
+    },
+    {
+      karma: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+        defaultValue: 0
+      }
     }
   });
 
