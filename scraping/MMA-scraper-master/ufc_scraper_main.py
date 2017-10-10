@@ -3,6 +3,7 @@ import pandas as pd
 import urllib
 import os
 import re
+import copy
 os.chdir('/home/helios/Documents/nodeFiles/fight-card-/scraping')
 
 # Open the main page with events listed
@@ -11,42 +12,35 @@ page = sock.read()
 soup = BeautifulSoup(page)
 
 # Scrape event URLs from the main page
+event = {'url': 'foo', 'date': 'bar', 'time': 'baz', 'location': 'buz'}
 event_urls = []
 div = soup.find(id='event_content')
 arrows = div.findChildren('div', {'class' : 'btn-ltgray-arrow'})
+dates = div.findChildren('div', {'class' : 'date'})
+times = div.findChildren('div', {'class' : 'time'})
+locations = div.findChildren('h3', {'class' : 'location'})
+aiter = 0
 for a in arrows:
     link = a.findChildren('a')
-    event = link[0].get('href')
-    event_urls.append('http://www.ufc.com' + event)
+    event_href = link[0].get('href')
+    event['url'] = 'http://www.ufc.com' + event_href
+    date_strip = re.sub('^[^a-zA-z0-9]*|[^a-zA-Z0-9]*$','', dates[aiter].text)
+    time_strip = ''.join(ch for ch in times[aiter].text if ch.isalnum())
+    time_restrip = ''.join(time_strip.partition('M')[0:2])
+    event['date'] = date_strip
+    event['time'] = time_restrip
+    event['location'] = locations[aiter].text
+    event_urls.append(copy.copy(event))
+    print event_urls
+    aiter += 1
 # Pull Fight URLs from each Event URL
-match = {'fighter': 'foo', 'opponent': 'bar', 'weight class' : 'baz'}
+match = {'fighter': 'foo', 'opponent': 'bar', 'weight class' : 'baz', 'event_url' : 'buz'}
 matches = []
 print matches
 iter = 0
 for event_url in event_urls: 
+    print event_url
     try:
-        sock = urllib.urlopen(event_url)
-        event_html = sock.read()
-        event_soup = BeautifulSoup(event_html)
-
-        head = event_soup.select('#titleArea')
-        head_content = head[0]
-        head_list = head_content.prettify().splitlines()
-        event_name = head_list[1]
-        event_date = head_list[4]
-        fighters = head_list[7]
-        event_strip = event_date[5:]
-        event_list = event_strip.split(' ')
-        unabbri = ""
-        short_months = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."]
-        full_months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-
-        for i in range(0, len(short_months)):
-            if event_list[1] == short_months[i]:
-                unabbri = full_months[i]
-        query_date = unabbri + event_date[10:]
-
-
         fightmetric = urllib.urlopen('http://www.fightmetric.com/statistics/events/upcoming?page=all')
         fmpage = fightmetric.read()
         fightsoup = BeautifulSoup(fmpage)
@@ -58,6 +52,7 @@ for event_url in event_urls:
         metric_soup = BeautifulSoup(metric_html)
         trs = metric_soup.find_all('tr')
         tds = metric_soup.find_all('td')
+        trIter = 0
         for tr in trs:
             tdIter = 0
             for td in tr:
@@ -77,9 +72,11 @@ for event_url in event_urls:
                     for child in weightclass:
                         weight_strip = re.sub('^[^a-zA-z]*|[^a-zA-Z]*$','', child.text)
                         match['weight class'] = weight_strip
-                    print match
-                    matches.append(match)
+                    match['event_url'] = event_url
                 tdIter += 1
+            if trIter < len(trs) - 1:
+                matches.append(copy.copy(match))
+            trIter += 1
 
         iter += 1
     
@@ -87,9 +84,9 @@ for event_url in event_urls:
         pass
 
 # Save fight URLs to a csv file
-matches = pd.DataFrame(matches, columns=['fighter', 'opponent', 'weight class'])
-print matches
-event_urls = pd.DataFrame(event_urls, columns=['link'])
+matches = pd.DataFrame(matches[1:], columns=['fighter', 'opponent', 'weight class', 'event_url'])
 matches.to_csv('matches.csv', index=False)
-event_urls.to_csv('event urls.csv', index=False)
+event_urls = pd.DataFrame(event_urls, columns=['date', 'time', 'location'])
+print event_urls
+event_urls.to_csv('events', index=False)
 
