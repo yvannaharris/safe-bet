@@ -16,12 +16,10 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
-    {
-      karma: {
-        type: DataTypes.FLOAT,
-        allowNull: false,
-        defaultValue: 0
-      }
+    karma: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+      defaultValue: 0
     }
   });
 
