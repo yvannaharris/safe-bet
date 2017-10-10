@@ -13,7 +13,7 @@ module.exports = function(app) {
         });
     });
 
-    app.get("/api/users/:id," (req, res) => {
+    app.get("/api/users/:id", (req, res) => {
         db.User.findOne({
             where: {
                 id: req.params.id
