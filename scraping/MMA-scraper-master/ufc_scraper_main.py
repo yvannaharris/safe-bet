@@ -38,8 +38,8 @@ match = {'fighter': 'foo', 'opponent': 'bar', 'weight class' : 'baz', 'event_url
 matches = []
 print matches
 iter = 0
-for event_url in event_urls: 
-    print event_url
+for event in event_urls: 
+    print event['url']
     try:
         fightmetric = urllib.urlopen('http://www.fightmetric.com/statistics/events/upcoming?page=all')
         fmpage = fightmetric.read()
@@ -72,7 +72,7 @@ for event_url in event_urls:
                     for child in weightclass:
                         weight_strip = re.sub('^[^a-zA-z]*|[^a-zA-Z]*$','', child.text)
                         match['weight class'] = weight_strip
-                    match['event_url'] = event_url
+                    match['event_url'] = event['url']
                 tdIter += 1
             if trIter < len(trs) - 1:
                 matches.append(copy.copy(match))
