@@ -34,7 +34,12 @@ module.exports = function(app) {
         fighterArr.push(data);
         var fighters = {
           fighter: fighterArr[0],
-          opponent: fighterArr[1]
+          opponent: fighterArr[1],
+          user: {
+            username: req.session.username,
+            id: req.session.id,
+            karma: req.session.karma
+          }
         }
         console.log(fighters);
         res.render("index", fighters)
