@@ -4,7 +4,7 @@ import urllib
 import os
 import re
 import copy
-os.chdir('/home/helios/Documents/nodeFiles/fight-card-/scraping')
+os.chdir('/scraping')
 
 # Open the main page with events listed
 sock = urllib.urlopen('http://www.ufc.com/schedule')
@@ -12,13 +12,16 @@ page = sock.read()
 soup = BeautifulSoup(page)
 
 # Scrape event URLs from the main page
-event = {'url': 'foo', 'date': 'bar', 'time': 'baz', 'location': 'buz'}
+print 'Scraping Events...'
+event = {'url': 'foo', 'name': 'bazbuz', 'date': 'bar', 'time': 'baz', 'venue': 'buz', 'location': 'foobar'}
 event_urls = []
 div = soup.find(id='event_content')
 arrows = div.findChildren('div', {'class' : 'btn-ltgray-arrow'})
 dates = div.findChildren('div', {'class' : 'date'})
 times = div.findChildren('div', {'class' : 'time'})
+venues = div.findChildren('span', {'class' : 'location-split'})
 locations = div.findChildren('h3', {'class' : 'location'})
+headlines = div.findChildren('div', {'class' : 'event-title'})
 aiter = 0
 for a in arrows:
     link = a.findChildren('a')
@@ -29,14 +32,15 @@ for a in arrows:
     time_restrip = ''.join(time_strip.partition('M')[0:2])
     event['date'] = date_strip
     event['time'] = time_restrip
-    event['location'] = locations[aiter].text
+    event['venue'] = venues[aiter].text
+    event['location'] = re.sub(venues[aiter].text, '', locations[aiter].text)
+    event['name'] = headlines[aiter].find('a').text
     event_urls.append(copy.copy(event))
-    print event_urls
     aiter += 1
 # Pull Fight URLs from each Event URL
+print 'Finding matches per each event...'
 match = {'fighter': 'foo', 'opponent': 'bar', 'weight class' : 'baz', 'event_url' : 'buz'}
 matches = []
-print matches
 iter = 0
 for event in event_urls: 
     print event['url']
@@ -85,8 +89,9 @@ for event in event_urls:
 
 # Save fight URLs to a csv file
 matches = pd.DataFrame(matches[1:], columns=['fighter', 'opponent', 'weight class', 'event_url'])
-matches.to_csv('matches.csv', index=False)
-event_urls = pd.DataFrame(event_urls, columns=['date', 'time', 'location'])
-print event_urls
-event_urls.to_csv('events', index=False)
-
+matches.to_csv('matches.csv', encoding='utf-8', index=False)
+print 'Saved found matches to matches.csv'
+event_urls = pd.DataFrame(event_urls, columns=['url', 'name', 'date', 'time', 'location', 'venue'])
+event_urls.to_csv('events.csv', encoding='utf-8', index=False)
+print 'Saved found events to events.csv'
+print 'Done'

@@ -1,79 +1,86 @@
 fighter,opponent,weight class,event_url
-Donald Cerrone,Darren Till,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Karolina Kowalkiewicz,Jodie Esquibel,Women's Strawweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Jan Blachowicz,Devin Clark,Light Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Jonathan Wilson,Oskar Piechota,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Marcin Held,Teemu Packalen,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Anthony Hamilton,Adam Wieczorek,Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Damian Stasiak,Brian Kelleher,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Trevor Smith,Ramazan Emeev,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Artem Lobov,Andre Fili,Featherweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Jimmy Wallhead,Warlley Alves,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Lina Lansberg,Aspen Ladd,Women's Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight', 'date': u'Saturday, October 21', 'location': u'Gdansk, PolandErgo Arena', 'time': u'3PM'}"
-Felipe Arantes,Josh Emmett,Featherweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Derek Brunson,Lyoto Machida,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Demian Maia,Colby Covington,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Pedro Munhoz,Rob Font,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Francisco Trinaldo,Jim Miller,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Thiago Santos,Jack Hermansson,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-John Lineker,Marlon Vera,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Luan Chagas,Niko Price,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Augusto Mendes,Boston Salmon,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Antonio Carlos Junior,Jack Marshman,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Elizeu Zaleski dos Santos,Max Griffin,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Hacran Dias,Jared Gordon,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight', 'date': u'Saturday, October 28', 'location': u'Sao Paulo, BrazilGin\xe1sio do Ibirapuera', 'time': u'10PM'}"
-Deiveson Figueiredo,Jarred Brooks,Flyweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Michael Bisping,Georges St-Pierre,Middleweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Cody Garbrandt,TJ Dillashaw,Bantamweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Joanna Jedrzejczyk,Rose Namajunas,Women's Strawweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Stephen Thompson,Jorge Masvidal,Welterweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-James Vick,Joe Duffy,Lightweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Johny Hendricks,Paulo Borrachinha,Middleweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Gadzhimurad Antigulov,Ion Cutelaba,Light Heavyweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Randy Brown,Mickey Gall,Welterweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Aleksei Oleinik,Curtis Blaydes,Heavyweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Corey Anderson,Patrick Cummins,Light Heavyweight,"{'url': 'http://www.ufc.com/event/UFC-217#/fight', 'date': u'Saturday, November 4', 'location': u'New York, NYMadison Square Garden', 'time': ''}"
-Aiemann Zahabi,Ricardo Ramos,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Dustin Poirier,Anthony Pettis,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Matt Brown,Diego Sanchez,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Andrei Arlovski,Junior Albini,Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Nate Marquardt,Cezar Ferreira,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Raphael Assuncao,Matthew Lopez,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Joe Lauzon,Clay Guida,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-John Dodson,Marlon Moraes,Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Tatiana Suarez,Viviane Pereira,Women's Strawweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Sage Northcutt,Michel Quinones,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Angela Hill,Nina Ansaroff,Women's Strawweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Court McGee,Sean Strickland,Welterweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Jake Collier,Marcel Fortuna,Light Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight', 'date': u'Saturday, November 11', 'location': u'Norfolk, VirginiaTed Constant Convocation Center', 'time': ''}"
-Darren Stewart,Karl Roberson,Light Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Mark Hunt,Marcin Tybura,Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Bec Rawlings,Joanne Calderwood,Women's Flyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Alexander Volkanovski,Jeremy Kennedy,Featherweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Elias Theodorou,Daniel Kelly,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Jenel Lausa,Eric Shelton,Flyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Ryan Benoit,Ashkan Mokhtarian,Flyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight', 'date': u'Saturday, November 18', 'location': u'Sydney, AustraliaQudos Bank Arena', 'time': ''}"
-Alex Chambers,Nadia Kassem,Women's Strawweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-shanghai-nov-25-2017#/fight', 'date': u'Saturday, November 25', 'location': u'Shanghai, ChinaMercedes-Benz Arena', 'time': ''}"
-Anderson Silva,Kelvin Gastelum,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-shanghai-nov-25-2017#/fight', 'date': u'Saturday, November 25', 'location': u'Shanghai, ChinaMercedes-Benz Arena', 'time': ''}"
-Gina Mazany,Yanan Wu,Women's Bantamweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-shanghai-nov-25-2017#/fight', 'date': u'Saturday, November 25', 'location': u'Shanghai, ChinaMercedes-Benz Arena', 'time': ''}"
-Kailin Curran,Xiaonan Yan,Women's Strawweight,"{'url': 'http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight', 'date': u'Friday, December 1', 'location': u'Las Vegas, NevadaPark Theatre', 'time': ''}"
-Andrew Sanchez,Ryan Janes,Middleweight,"{'url': 'http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight', 'date': u'Friday, December 1', 'location': u'Las Vegas, NevadaPark Theatre', 'time': ''}"
-Joe Soto,Brett Johns,Bantamweight,"{'url': 'http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight', 'date': u'Friday, December 1', 'location': u'Las Vegas, NevadaPark Theatre', 'time': ''}"
-Sean O'Malley,Terrion Ware,Bantamweight,"{'url': 'http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight', 'date': u'Friday, December 1', 'location': u'Las Vegas, NevadaPark Theatre', 'time': ''}"
-Eric Spicely,Gerald Meerschaert,Middleweight,"{'url': 'http://www.ufc.com/event/UFC-218#/fight', 'date': u'Saturday, December 2', 'location': u'Detroit, MichiganLittle Caesars Arena', 'time': ''}"
-Max Holloway,Frankie Edgar,Featherweight,"{'url': 'http://www.ufc.com/event/UFC-218#/fight', 'date': u'Saturday, December 2', 'location': u'Detroit, MichiganLittle Caesars Arena', 'time': ''}"
-Alistair Overeem,Francis Ngannou,Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight', 'date': u'Saturday, December 9', 'location': u'Fresno, CaliforniaSave Mart Center', 'time': ''}"
-Liz Carmouche,Alexis Davis,Women's Flyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight', 'date': u'Saturday, December 9', 'location': u'Fresno, CaliforniaSave Mart Center', 'time': ''}"
-Scott Holtzman,Darrell Horcher,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight', 'date': u'Saturday, December 9', 'location': u'Fresno, CaliforniaSave Mart Center', 'time': ''}"
-Eryk Anders,John Phillips,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight', 'date': u'Saturday, December 9', 'location': u'Fresno, CaliforniaSave Mart Center', 'time': ''}"
-Antonio Braga Neto,Trevin Giles,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight', 'date': u'Saturday, December 9', 'location': u'Fresno, CaliforniaSave Mart Center', 'time': ''}"
-Alex Perez,Carls John De Tomas,Flyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight', 'date': u'Saturday, December 9', 'location': u'Fresno, CaliforniaSave Mart Center', 'time': ''}"
-Chris Gruetzemacher,Davi Ramos,Lightweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight', 'date': u'Saturday, December 16', 'location': u'Winnipeg, CanadaBell MTS Place', 'time': ''}"
-Rogerio Nogueira,Jared Cannonier,Light Heavyweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight', 'date': u'Saturday, December 16', 'location': u'Winnipeg, CanadaBell MTS Place', 'time': ''}"
-Alessio Di Chirico,Oluwale Bamgbose,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight', 'date': u'Saturday, December 16', 'location': u'Winnipeg, CanadaBell MTS Place', 'time': ''}"
-Vitor Miranda,Julian Marquez,Middleweight,"{'url': 'http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight', 'date': u'Saturday, December 16', 'location': u'Winnipeg, CanadaBell MTS Place', 'time': ''}"
-Tim Elliott,Justin Scoggins,Flyweight,"{'url': 'http://www.ufc.com/event/UFC-219#/fight', 'date': u'Saturday, December 30', 'location': u'Las Vegas, NevadaT-Mobile Arena', 'time': ''}"
-Dominick Cruz,Jimmie Rivera,Bantamweight,"{'url': 'http://www.ufc.com/event/UFC-219#/fight', 'date': u'Saturday, December 30', 'location': u'Las Vegas, NevadaT-Mobile Arena', 'time': ''}"
-Cynthia Calvillo,Carla Esparza,Women's Strawweight,"{'url': 'http://www.ufc.com/event/UFC-219#/fight', 'date': u'Saturday, December 30', 'location': u'Las Vegas, NevadaT-Mobile Arena', 'time': ''}"
-Louis Smolka,Matheus Nicolau,Flyweight,"{'url': 'http://www.ufc.com/event/UFC-219#/fight', 'date': u'Saturday, December 30', 'location': u'Las Vegas, NevadaT-Mobile Arena', 'time': ''}"
-Carlos Condit,Neil Magny,Welterweight,"{'url': 'http://www.ufc.com/event/UFC-219#/fight', 'date': u'Saturday, December 30', 'location': u'Las Vegas, NevadaT-Mobile Arena', 'time': ''}"
+Donald Cerrone,Darren Till,Welterweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Karolina Kowalkiewicz,Jodie Esquibel,Women's Strawweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Jan Blachowicz,Devin Clark,Light Heavyweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Oskar Piechota,Jonathan Wilson,Middleweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Marcin Held,Nasrat Haqparast,Lightweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Anthony Hamilton,Adam Wieczorek,Heavyweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Damian Stasiak,Brian Kelleher,Bantamweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Sam Alvey,Ramazan Emeev,Middleweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Artem Lobov,Andre Fili,Featherweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Jimmy Wallhead,Warlley Alves,Welterweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Lina Lansberg,Aspen Ladd,Women's Bantamweight,http://www.ufc.com/event/ufc-fight-night-poland-2017#/fight
+Felipe Arantes,Josh Emmett,Featherweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Derek Brunson,Lyoto Machida,Middleweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Demian Maia,Colby Covington,Welterweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Pedro Munhoz,Rob Font,Bantamweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Francisco Trinaldo,Jim Miller,Lightweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Thiago Santos,Jack Hermansson,Middleweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+John Lineker,Marlon Vera,Bantamweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Luan Chagas,Niko Price,Welterweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Augusto Mendes,Boston Salmon,Bantamweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Antonio Carlos Junior,Jack Marshman,Middleweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Elizeu Zaleski dos Santos,Max Griffin,Welterweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Hacran Dias,Jared Gordon,Lightweight,http://www.ufc.com/event/ufc-fight-night-brazil-oct-28-2017#/fight
+Deiveson Figueiredo,Jarred Brooks,Flyweight,http://www.ufc.com/event/UFC-217#/fight
+Michael Bisping,Georges St-Pierre,Middleweight,http://www.ufc.com/event/UFC-217#/fight
+Cody Garbrandt,TJ Dillashaw,Bantamweight,http://www.ufc.com/event/UFC-217#/fight
+Joanna Jedrzejczyk,Rose Namajunas,Women's Strawweight,http://www.ufc.com/event/UFC-217#/fight
+Stephen Thompson,Jorge Masvidal,Welterweight,http://www.ufc.com/event/UFC-217#/fight
+James Vick,Joe Duffy,Lightweight,http://www.ufc.com/event/UFC-217#/fight
+Johny Hendricks,Paulo Borrachinha,Middleweight,http://www.ufc.com/event/UFC-217#/fight
+Gadzhimurad Antigulov,Ion Cutelaba,Light Heavyweight,http://www.ufc.com/event/UFC-217#/fight
+Randy Brown,Mickey Gall,Welterweight,http://www.ufc.com/event/UFC-217#/fight
+Aleksei Oleinik,Curtis Blaydes,Heavyweight,http://www.ufc.com/event/UFC-217#/fight
+Corey Anderson,Patrick Cummins,Light Heavyweight,http://www.ufc.com/event/UFC-217#/fight
+Aiemann Zahabi,Ricardo Ramos,Bantamweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Dustin Poirier,Anthony Pettis,Lightweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Matt Brown,Diego Sanchez,Welterweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Andrei Arlovski,Junior Albini,Heavyweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Nate Marquardt,Cezar Ferreira,Middleweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Raphael Assuncao,Matthew Lopez,Bantamweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Joe Lauzon,Clay Guida,Lightweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+John Dodson,Marlon Moraes,Bantamweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Tatiana Suarez,Viviane Pereira,Women's Strawweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Sage Northcutt,Michel Quinones,Lightweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Angela Hill,Nina Ansaroff,Women's Strawweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Court McGee,Sean Strickland,Welterweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Jake Collier,Marcel Fortuna,Light Heavyweight,http://www.ufc.com/event/ufc-fight-night-norfolk-nov-11-2017#/fight
+Darren Stewart,Karl Roberson,Light Heavyweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Mark Hunt,Marcin Tybura,Heavyweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Bec Rawlings,Joanne Calderwood,Women's Flyweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Alexander Volkanovski,Jeremy Kennedy,Featherweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Elias Theodorou,Daniel Kelly,Middleweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Jenel Lausa,Eric Shelton,Flyweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Ryan Benoit,Ashkan Mokhtarian,Flyweight,http://www.ufc.com/event/ufc-fight-night-sydney-2017#/fight
+Alex Chambers,Nadia Kassem,Women's Strawweight,http://www.ufc.com/event/ufc-fight-night-shanghai-nov-25-2017#/fight
+Anderson Silva,Kelvin Gastelum,Middleweight,http://www.ufc.com/event/ufc-fight-night-shanghai-nov-25-2017#/fight
+Gina Mazany,Yanan Wu,Women's Bantamweight,http://www.ufc.com/event/ufc-fight-night-shanghai-nov-25-2017#/fight
+Kailin Curran,Xiaonan Yan,Women's Strawweight,http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight
+Andrew Sanchez,Ryan Janes,Middleweight,http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight
+Joe Soto,Brett Johns,Bantamweight,http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight
+Sean O'Malley,Terrion Ware,Bantamweight,http://www.ufc.com/event/the-ultimate-fighter-finale-dec-1-2017#/fight
+Eric Spicely,Gerald Meerschaert,Middleweight,http://www.ufc.com/event/UFC-218#/fight
+Max Holloway,Frankie Edgar,Featherweight,http://www.ufc.com/event/UFC-218#/fight
+Alistair Overeem,Francis Ngannou,Heavyweight,http://www.ufc.com/event/UFC-218#/fight
+Eddie Alvarez,Justin Gaethje,Lightweight,http://www.ufc.com/event/UFC-218#/fight
+Henry Cejudo,Sergio Pettis,Flyweight,http://www.ufc.com/event/UFC-218#/fight
+Drakkar Klose,David Teymur,Lightweight,http://www.ufc.com/event/UFC-218#/fight
+Felice Herrig,Cortney Casey,Women's Strawweight,http://www.ufc.com/event/UFC-218#/fight
+Amanda Cooper,Angela Magana,Women's Strawweight,http://www.ufc.com/event/UFC-218#/fight
+Jeremy Kimball,Dominick Reyes,Light Heavyweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Cub Swanson,Brian Ortega,Featherweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Liz Carmouche,Alexis Davis,Women's Flyweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Scott Holtzman,Darrell Horcher,Lightweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Eryk Anders,John Phillips,Middleweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Antonio Braga Neto,Trevin Giles,Middleweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Alex Perez,Carls John De Tomas,Flyweight,http://www.ufc.com/event/ufc-fight-night-fresno-dec-9-2017#/fight
+Chris Gruetzemacher,Davi Ramos,Lightweight,http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight
+Rogerio Nogueira,Jared Cannonier,Light Heavyweight,http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight
+Alessio Di Chirico,Oluwale Bamgbose,Middleweight,http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight
+Vitor Miranda,Julian Marquez,Middleweight,http://www.ufc.com/event/ufc-fight-night-winnipeg-dec-16-2017#/fight
+Tim Elliott,Justin Scoggins,Flyweight,http://www.ufc.com/event/UFC-219#/fight
+Dominick Cruz,Jimmie Rivera,Bantamweight,http://www.ufc.com/event/UFC-219#/fight
+Cynthia Calvillo,Carla Esparza,Women's Strawweight,http://www.ufc.com/event/UFC-219#/fight
+Louis Smolka,Matheus Nicolau,Flyweight,http://www.ufc.com/event/UFC-219#/fight
+Carlos Condit,Neil Magny,Welterweight,http://www.ufc.com/event/UFC-219#/fight
