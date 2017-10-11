@@ -1,5 +1,5 @@
 body {
-	background: url('background.jpg');
+	background: url('../images/background.jpg');
 }
 .card {
     /* Add shadows to create the "card" effect */
@@ -21,5 +21,5 @@ ul {
 }
 
 #sign-in-container {
-	background: url('card_background.jpg');
+	background: url('../images/card_background.jpg');
 }
