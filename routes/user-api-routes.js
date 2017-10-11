@@ -44,4 +44,17 @@ module.exports = function(app) {
             res.json(dbUser);
         });
     });
+
+    app.post("/authenticate", function (req, res) {
+        db.User.findOne({
+            where: {
+                username: req.body.username
+            }
+        }).then((dbUser) => {
+            req.session.username = dbUser.username;
+            req.session.id = dbUser.id;
+            req.session.karma = dbUser.karma;
+            console.log(req.session);
+        })
+    });
 }
