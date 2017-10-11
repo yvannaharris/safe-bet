@@ -44,4 +44,16 @@ module.exports = function(app) {
             res.json(dbUser);
         });
     });
+
+    app.get("/api/user/authenticate", function (req, res) {
+        console.log("start");
+        req.session.username = "cat";
+        // res.json({text: req.session.username});
+        res.send("username " + req.session.username);
+        console.log(req.session.username)
+    });
+
+    app.get("/api/user/test", function (req, res) {
+        res.json(req.session.username);
+    });
 }

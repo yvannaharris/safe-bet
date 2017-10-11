@@ -4,6 +4,11 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.FLOAT,
         allowNull: false,
         defaultValue: 0
+      },
+      karma_received: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
       }
     });
 
