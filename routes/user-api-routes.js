@@ -45,15 +45,16 @@ module.exports = function(app) {
         });
     });
 
-    app.get("/api/user/authenticate", function (req, res) {
-        console.log("start");
-        req.session.username = "cat";
-        // res.json({text: req.session.username});
-        res.send("username " + req.session.username);
-        console.log(req.session.username)
-    });
-
-    app.get("/api/user/test", function (req, res) {
-        res.json(req.session.username);
+    app.post("/authenticate", function (req, res) {
+        db.User.findOne({
+            where: {
+                username: req.body.username
+            }
+        }).then((dbUser) => {
+            req.session.username = dbUser.username;
+            req.session.id = dbUser.id;
+            req.session.karma = dbUser.karma;
+            console.log(req.session);
+        })
     });
 }
