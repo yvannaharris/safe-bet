@@ -21,5 +21,8 @@ ul {
 }
 
 #sign-in-container {
+
 	background: url('../images/card_background.jpg');
+	padding: 20px;
+
 }
