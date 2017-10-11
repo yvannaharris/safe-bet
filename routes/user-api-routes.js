@@ -57,4 +57,5 @@ module.exports = function(app) {
             console.log(req.session);
         })
     });
+
 }
