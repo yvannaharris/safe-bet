@@ -28,6 +28,10 @@ module.exports = function(app) {
       var fighter = dbIndex[0].Matches[0].fighter;
       var opponent = dbIndex[0].Matches[0].opponent;
       var fighterArr = [];
+      var matchesArr = [];
+      for (var i = 0, i < dbIndex[0].Matches.length, i+2) {
+        matchesArr.push(dbIndex[0].Matches[i]);
+      }
       mma.fighter(fighter, function(data) {
         fighterArr.push(data);
         mma.fighter(opponent, function(data) {
@@ -39,7 +43,8 @@ module.exports = function(app) {
             username: req.session.username,
             id: req.session.id,
             karma: req.session.karma
-          }
+          },
+          matches: matchesArr
         }
         console.log(fighters);
         res.render("index", fighters)
