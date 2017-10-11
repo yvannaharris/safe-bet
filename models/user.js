@@ -6,15 +6,8 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       validate: {
         len: [1]
-      }
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: "password",
-      validate: {
-        len: [1]
-      }
+      },
+      unique: true
     },
     karma: {
       type: DataTypes.FLOAT,

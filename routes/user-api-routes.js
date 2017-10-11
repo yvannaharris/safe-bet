@@ -44,4 +44,35 @@ module.exports = function(app) {
             res.json(dbUser);
         });
     });
+
+    app.post("/authenticate", function (req, res) {
+        console.log(req.body);
+        db.User.findOne({
+            where: {
+                username: req.body.username
+            }
+        }).then((dbUser) => {
+            console.log(dbUser);
+            if (dbUser == null) {
+                console.log("please enter a valid username!");
+                res.redirect("/sign-in");
+            }
+            else {
+                req.session.username = dbUser.username;
+                req.session.userid = dbUser.id;
+                req.session.karma = dbUser.karma;
+                console.log(req.session);
+                res.redirect("/sign-in");
+            }
+        })
+    });
+
+    app.get("/test", function (req, res) {
+        res.send({
+            username: req.session.username,
+            karma: req.session.karma,
+            id: req.session.userid
+        });
+    });
+
 }

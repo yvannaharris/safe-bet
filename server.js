@@ -21,6 +21,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+var session = require('express-session');
+
+app.use(session({
+	secret: 'keyboard cat',
+	resave: false,
+	saveUninitialized: true
+}));
+
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -34,6 +42,7 @@ app.use(express.static("public"));
 require("./routes/match-api-routes.js")(app);
 require("./routes/event-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

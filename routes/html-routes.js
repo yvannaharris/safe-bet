@@ -34,7 +34,12 @@ module.exports = function(app) {
         fighterArr.push(data);
         var fighters = {
           fighter: fighterArr[0],
-          opponent: fighterArr[1]
+          opponent: fighterArr[1],
+          user: {
+            username: req.session.username,
+            id: req.session.id,
+            karma: req.session.karma
+          }
         }
         console.log(fighters);
         res.render("index", fighters)
@@ -42,6 +47,14 @@ module.exports = function(app) {
       })
     })
   });
+
+  app.get("/sign-in", function (req, res) {
+    res.render("sign-in", {
+      username: req.session.username,
+      karma: req.session.karma
+    });
+  });
+  
 
 };
 
