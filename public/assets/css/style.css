@@ -26,3 +26,70 @@ ul {
 	padding: 20px;
 
 }
+
+#lesser-fights {
+	background: white;
+}
+
+.bet-status {
+	background: #08EA01;
+	border-radius: 50%;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 380px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+    background: url('../images/card_background.jpg');
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	padding: 20px;
+	font-size: 20px;
+	line-height: 10px;
+}
+
+img {
+	padding-top: 20px;
+}
+
+.fighter-name {
+	color: #ffffff;
+	text-align: center;
+	font-size: 28px;
+
+}
