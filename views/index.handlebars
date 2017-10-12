@@ -18,10 +18,10 @@
           <li class="strikes_s">Strikes Successful:{{this.fighter.strikes.successful}}</li>
         </ul>
       </div>
-      <form>
+      <form action="/bets/{{this.fMatch.id}}" method="POST">
       	<div class="form-group">
       		<label for="betInput">Amount</label>
-      		<input type="text" class="bet_amount" placeholder="Bet 	Amount">
+      		<input type="text" class="bet_amount" placeholder="Bet 	Amount" name="amount">
       	</div>
       	<button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -43,10 +43,10 @@
           <li class="strikes_s">Strikes Successful:{{this.opponent.strikes.successful}}</li>
         </ul> 
       </div>
-      <form>
+      <form action="/bets/{{this.oMatch.id}}" method="POST">
       	<div class="form-group">
       		<label for="betInput">Amount</label>
-      		<input type="text" class="bet_amount" placeholder="Enter Bet Amount">
+      		<input type="text" class="bet_amount" placeholder="Enter Bet Amount" name="amount">
       	</div>
       	<button type="submit" class="btn btn-primary">Submit</button>
       </form>
