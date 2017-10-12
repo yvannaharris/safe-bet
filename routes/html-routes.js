@@ -1,6 +1,8 @@
 
 // Dependencies
 // =============================================================
+// Dependencies
+// =============================================================
 var path = require("path");
 
 var express = require("express");
@@ -27,11 +29,24 @@ module.exports = function(app) {
     }).then(function (dbIndex) {
       var fighter = dbIndex[0].Matches[0].fighter;
       var opponent = dbIndex[0].Matches[0].opponent;
+      var fighterMatch = dbIndex[0].Matches[0];
+      var opponentMatch = dbIndex[0].Matches[0+1];
       var fighterArr = [];
       var matchesArr = [];
-      for (var i = 0, i < dbIndex[0].Matches.length, i+2) {
-        matchesArr.push(dbIndex[0].Matches[i]);
-      }
+        //TEMPORARY FIX SINCE FOR LOOP EXCEEDS MEMORY
+        matchesArr.push(dbIndex[0].Matches[0]);
+        matchesArr.push(dbIndex[0].Matches[2]);
+        matchesArr.push(dbIndex[0].Matches[4]);
+        matchesArr.push(dbIndex[0].Matches[6]);
+        matchesArr.push(dbIndex[0].Matches[8]);
+        matchesArr.push(dbIndex[0].Matches[10]);
+        matchesArr.push(dbIndex[0].Matches[12]);
+        matchesArr.push(dbIndex[0].Matches[14]);
+        matchesArr.push(dbIndex[0].Matches[16]);
+        matchesArr.push(dbIndex[0].Matches[18]);
+        matchesArr.push(dbIndex[0].Matches[20]);
+        matchesArr.push(dbIndex[0].Matches[22]);
+        matchesArr.push(dbIndex[0].Matches[24]);
       mma.fighter(fighter, function(data) {
         fighterArr.push(data);
         mma.fighter(opponent, function(data) {
@@ -44,7 +59,9 @@ module.exports = function(app) {
             id: req.session.id,
             karma: req.session.karma
           },
-          matches: matchesArr
+          matches: matchesArr,
+          fMatch: fighterMatch,
+          oMatch: opponentMatch
         }
         console.log(fighters);
         res.render("index", fighters)

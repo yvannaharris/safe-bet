@@ -1,23 +1,39 @@
 
+<div class="jumbo-container">
+  <div class="jumbotron">
+  <div class="container">
+    <h1>Safe Bet is your best bet.</h1>
+      <p>Review the stats. Place your bets. Collect the karma!</p>
+      <p><a class="btn btn-primary btn-lg" href="sign-in" role="button">Sign In</a></p>
+  </div>
+</div>
+</div>
+
 <div class="main-container">
   <div class="row">
-    <div class="col-md-offset-2 col-md-4">
-
-      <div class="card">
-        <ul class="stats">
-          <li class="name">{{this.fighter.name}}</li>
-          <li class="record">Record:{{this.fighter.record}}</li>
-          <li class="age">Age:{{this.fighter.age}}</li>
-          <li class="height">Height:{{this.fighter.height}}</li>
-          <li class="weight">Weight:{{this.fighter.weaight}}</li>
-          <li class="weight_class">Weight Class:{{this.fighter.weight_class}}</li>
-          <li class="wins_k">Knockouts:{{this.fighter.wins.knockouts}}</li>
-          <li class="wins_s">Submissions:{{this.fighter.wins.submissions}}</li>
-          <li class="wins_d">Decisions:{{this.fighter.decisions}}</li>
-          <li class="strikes_a">Strikes Attempted:{{this.fighter.strikes.attempted}}</li>
-          <li class="strikes_s">Strikes Successful:{{this.fighter.strikes.successful}}</li>
-        </ul>
-      </div>
+    <div class="col-md-offset-3 col-md-4">
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="/assets/images/Tony_F.png" alt="Avatar" style="width:100%">
+					<h3 class="fighter-name">{{this.fighter.name}}</h3>
+				</div>
+				<div class="back">
+			        <ul class="stats">
+			          <li class="record">Record:{{this.fighter.record}}</li>
+			          <li class="age">Age:{{this.fighter.age}}</li>
+			          <li class="height">Height:{{this.fighter.height}}</li>
+			          <li class="weight">Weight:{{this.fighter.weaight}}</li>
+			          <li class="weight_class">Weight Class:{{this.fighter.weight_class}}</li>
+			          <li class="wins_k">Knockouts:{{this.fighter.wins.knockouts}}</li>
+			          <li class="wins_s">Submissions:{{this.fighter.wins.submissions}}</li>
+			          <li class="wins_d">Decisions:{{this.fighter.decisions}}</li>
+			          <li class="strikes_a">Strikes Attempted:{{this.fighter.strikes.attempted}}</li>
+			          <li class="strikes_s">Strikes Successful:{{this.fighter.strikes.successful}}</li>
+			        </ul>
+        		</div>
+        	</div>
+        </div>
       <form>
       	<div class="form-group">
       		<label for="betInput">Amount</label>
@@ -28,21 +44,28 @@
 
     </div>
     <div class="col-md-4">
-      <div class="card">
-        <ul class="stats">
-          <li class="name">{{this.opponent.name}}</li>
-          <li class="record">Record:{{this.opponent.record}}</li>
-          <li class="age">Age:{{this.opponent.age}}</li>
-          <li class="height">Height:{{this.opponent.height}}</li>
-          <li class="weight">Weight:{{this.opponent.weight}}</li>
-          <li class="weight_class">Weight Class:{{this.opponent.weight_class}}</li>
-          <li class="wins_k">Knockouts:{{this.opponent.wins.knockouts}}</li>
-          <li class="wins_s">Submissions:{{this.opponent.wins.submissions}}</li>
-          <li class="wins_d">Decisions:{{this.opponent.wins.decisions}}</li>
-          <li class="strikes_a">Strikes Attempted:{{this.opponent.strikes.attempted}}</li>
-          <li class="strikes_s">Strikes Successful:{{this.opponent.strikes.successful}}</li>
-        </ul> 
-      </div>
+ 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="/assets/images/Kevin_L.png" alt="Avatar" style="width:100%">
+					<h3 class="fighter-name">{{this.opponent.name}}</h3>
+				</div>
+				<div class="back">
+			        <ul class="stats">
+			          <li class="record">Record:{{this.opponent.record}}</li>
+			          <li class="age">Age:{{this.opponent.age}}</li>
+			          <li class="height">Height:{{this.opponent.height}}</li>
+			          <li class="weight">Weight:{{this.opponent.weight}}</li>
+			          <li class="weight_class">Weight Class:{{this.opponent.weight_class}}</li>
+			          <li class="wins_k">Knockouts:{{this.opponent.wins.knockouts}}</li>
+			          <li class="wins_s">Submissions:{{this.opponent.wins.submissions}}</li>
+			          <li class="wins_d">Decisions:{{this.opponent.wins.decisions}}</li>
+			          <li class="strikes_a">Strikes Attempted:{{this.opponent.strikes.attempted}}</li>
+			          <li class="strikes_s">Strikes Successful:{{this.opponent.strikes.successful}}</li>
+			        </ul> 
+        		</div>
+        	</div>
+        </div>
       <form>
       	<div class="form-group">
       		<label for="betInput">Amount</label>
@@ -57,23 +80,14 @@
 
   <div class="row">
      <div class="col-md-offset-1 col-md-10">
-      <div class="sub-container" id="lesser-fights">
-      	<div class="event">
-			<h3>{{this.event_name}}</h3>
-				<p>{{this.date}}</p>
-				<p>{{this.venue}}</p>
-				<p>{{this.location}}</p>
-
-      	</div>
-
-      	<div class="event">
-
-      	</div>
-
-      	<div class="event">
-
-      	</div>
-      </div>
-    </div>   
+ 		<div class="panel panel-default">
+  			<div class="panel-heading">
+    			<h3 class="panel-title">Upcomming Events</h3>
+  			</div>
+  			<div class="panel-body">
+    			Panel content
+  			</div>
+		</div>
+	</div>   
   </div>
 
