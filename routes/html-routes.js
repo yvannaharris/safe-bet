@@ -27,6 +27,8 @@ module.exports = function(app) {
     }).then(function (dbIndex) {
       var fighter = dbIndex[0].Matches[0].fighter;
       var opponent = dbIndex[0].Matches[0].opponent;
+      var fighterMatch = dbIndex[0].Matches[0];
+      var opponentMatch = dbIndex[0].Matches[0+1];
       var fighterArr = [];
       var matchesArr = [];
         //TEMPORARY FIX SINCE FOR LOOP EXCEEDS MEMORY
@@ -55,7 +57,9 @@ module.exports = function(app) {
             id: req.session.id,
             karma: req.session.karma
           },
-          matches: matchesArr
+          matches: matchesArr,
+          fMatch: fighterMatch,
+          oMatch: opponentMatch
         }
         console.log(fighters);
         res.render("index", fighters)
