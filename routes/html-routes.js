@@ -14,8 +14,11 @@ var mma = require("mma");
 // Routes
 // =============================================================
 module.exports = function(app) {
+  var opsComplete = 0;
 
-  app.get("/", function(req, res) {
+  app.get("/fights", function(req, res) {
+    var fightersObj;
+    var renderArr = [];
     db.Event.findAll({
       where: {
         accepting_bets: true
@@ -25,48 +28,43 @@ module.exports = function(app) {
         model: db.Match
       }]
     }).then(function (dbIndex) {
-      var fighter = dbIndex[0].Matches[0].fighter;
-      var opponent = dbIndex[0].Matches[0].opponent;
-      var fighterMatch = dbIndex[0].Matches[0];
-      var opponentMatch = dbIndex[0].Matches[0+1];
-      var fighterArr = [];
-      var matchesArr = [];
-        //TEMPORARY FIX SINCE FOR LOOP EXCEEDS MEMORY
-        matchesArr.push(dbIndex[0].Matches[0]);
-        matchesArr.push(dbIndex[0].Matches[2]);
-        matchesArr.push(dbIndex[0].Matches[4]);
-        matchesArr.push(dbIndex[0].Matches[6]);
-        matchesArr.push(dbIndex[0].Matches[8]);
-        matchesArr.push(dbIndex[0].Matches[10]);
-        matchesArr.push(dbIndex[0].Matches[12]);
-        matchesArr.push(dbIndex[0].Matches[14]);
-        matchesArr.push(dbIndex[0].Matches[16]);
-        matchesArr.push(dbIndex[0].Matches[18]);
-        matchesArr.push(dbIndex[0].Matches[20]);
-        matchesArr.push(dbIndex[0].Matches[22]);
-        matchesArr.push(dbIndex[0].Matches[24]);
-      mma.fighter(fighter, function(data) {
-        fighterArr.push(data);
-        mma.fighter(opponent, function(data) {
-        fighterArr.push(data);
-        var fighters = {
-          fighter: fighterArr[0],
-          opponent: fighterArr[1],
-          user: {
-            username: req.session.username,
-            id: req.session.id,
-            karma: req.session.karma
-          },
-          matches: matchesArr,
-          fMatch: fighterMatch,
-          oMatch: opponentMatch
-        }
-        console.log(fighters);
-        res.render("index", fighters)
-        })
-      })
-    })
-  });
+        var fighterArr = [];
+        var matchesArr = [];
+            for (j = 0; j < dbIndex[0].Matches.length; j+=2) {
+                matchesArr.push(dbIndex[0].Matches[j]);
+                var fighter = dbIndex[0].Matches[j].fighter;
+                var opponent = dbIndex[0].Matches[j].opponent;
+                //Changed to query database instead of Google
+                matchesArr.push(dbIndex[0].Matches[j]);
+                db.Fighter.findOne({
+                    where: {
+                        name: fighter
+                    }
+                }).then(function(data) {
+                    fighterArr.push(data);
+                    db.Fighter.findOne({
+                        where: {
+                            name: opponent
+                        }
+                    }).then(function(data) {
+                        fighterArr.push(data);
+                        fightersObj = {
+                            fighter: fighterArr[fighterArr.length - 2],
+                            opponent: fighterArr[fighterArr.length - 1],
+                            user: {
+                                username: req.session.username,
+                                id: req.session.id,
+                                karma: req.session.karma
+                            },
+                            matches: matchesArr
+                        };
+                        renderArr.push(fightersObj);
+                        endOp(dbIndex, renderArr, res);
+                    });
+                });
+            }
+    });
+});
 
   app.get("/sign-in", function (req, res) {
     res.render("sign-in", {
@@ -76,7 +74,23 @@ module.exports = function(app) {
   });
   
 
+function toObject(arr) {
+    var rv = {};
+    for (i = 0; i < arr.length; i++) rv[i] = arr[i];
+    return rv;
+}
+
+function endOp(dbIndex, renderArr, res) {
+    if (renderArr.length == dbIndex[0].Matches.length / 2) {
+        var fighters = toObject(renderArr);
+        console.log(JSON.stringify(fighters, null, 2));
+        res.render("fights", fighters);
+    }
+}
+
 };
+
+
 
 //router.get("/", function (req,res) {
   // res.sendFile(path.join(__dirname, "../public/INDEX.html"));
