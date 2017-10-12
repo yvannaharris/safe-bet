@@ -76,17 +76,13 @@
   </div>
 
 
-
   <div class="row">
      <div class="col-md-offset-1 col-md-10">
- 		<div class="panel panel-default">
-  			<div class="panel-heading">
-    			<h3 class="panel-title">Upcomming Events</h3>
-  			</div>
-  			<div class="panel-body">
-    			Panel content
-  			</div>
-		</div>
+		<div id="other-fights">
+			{{#each matches}}
+				<a class="fights" href="">{{this.matches.fighter}} VS {{this.matches.opponent}}</a>
+			{{/each}}
+		</div> 
 	</div>   
   </div>
 

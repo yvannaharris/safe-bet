@@ -78,9 +78,9 @@ ul {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
-	padding: 20px;
+	padding: 10px;
 	font-size: 20px;
-	line-height: 10px;
+	line-height: 35px;
 }
 
 img {
@@ -91,5 +91,4 @@ img {
 	color: #ffffff;
 	text-align: center;
 	font-size: 28px;
-
 }
