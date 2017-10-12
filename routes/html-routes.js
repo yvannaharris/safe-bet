@@ -29,9 +29,20 @@ module.exports = function(app) {
       var opponent = dbIndex[0].Matches[0].opponent;
       var fighterArr = [];
       var matchesArr = [];
-      for (var i = 0, i < dbIndex[0].Matches.length, i+2) {
-        matchesArr.push(dbIndex[0].Matches[i]);
-      }
+        //TEMPORARY FIX SINCE FOR LOOP EXCEEDS MEMORY
+        matchesArr.push(dbIndex[0].Matches[0]);
+        matchesArr.push(dbIndex[0].Matches[2]);
+        matchesArr.push(dbIndex[0].Matches[4]);
+        matchesArr.push(dbIndex[0].Matches[6]);
+        matchesArr.push(dbIndex[0].Matches[8]);
+        matchesArr.push(dbIndex[0].Matches[10]);
+        matchesArr.push(dbIndex[0].Matches[12]);
+        matchesArr.push(dbIndex[0].Matches[14]);
+        matchesArr.push(dbIndex[0].Matches[16]);
+        matchesArr.push(dbIndex[0].Matches[18]);
+        matchesArr.push(dbIndex[0].Matches[20]);
+        matchesArr.push(dbIndex[0].Matches[22]);
+        matchesArr.push(dbIndex[0].Matches[24]);
       mma.fighter(fighter, function(data) {
         fighterArr.push(data);
         mma.fighter(opponent, function(data) {
