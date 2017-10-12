@@ -51,4 +51,14 @@ module.exports = function(app) {
             res.json(dbUser);
         });
     });
+
+    app.post("/bets/:matchid", (req, res) => {
+        db.Bet.create({
+            amount: req.body.amount,
+            UserId: req.session.userid,
+            MatchId: req.params.matchid
+        }).then((dbBet) => {
+            res.redirect("/");
+        });
+    });
 }
