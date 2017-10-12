@@ -7,7 +7,7 @@ body {
     transition: 0.3s;
     width: 60%;
     padding: 2px 16px;
-    background: url('card_background.jpg');
+    background: url('../images/card_background.jpg');
 }
 
 /* On mouse-over, add a deeper shadow */
