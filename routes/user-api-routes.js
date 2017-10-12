@@ -55,6 +55,9 @@ module.exports = function(app) {
             console.log(dbUser);
             if (dbUser == null) {
                 console.log("please enter a valid username!");
+                req.session.username = "";
+                req.session.userid = "";
+                req.session.karma = "";
                 res.redirect("/sign-in");
             }
             else {
