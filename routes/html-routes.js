@@ -45,7 +45,6 @@ module.exports = function(app) {
         matchesArr.push(dbIndex[0].Matches[18]);
         matchesArr.push(dbIndex[0].Matches[20]);
         matchesArr.push(dbIndex[0].Matches[22]);
-        matchesArr.push(dbIndex[0].Matches[24]);
       mma.fighter(fighter, function(data) {
         fighterArr.push(data);
         mma.fighter(opponent, function(data) {
@@ -104,7 +103,6 @@ module.exports = function(app) {
         matchesArr.push(dbIndex[0].Matches[18]);
         matchesArr.push(dbIndex[0].Matches[20]);
         matchesArr.push(dbIndex[0].Matches[22]);
-        matchesArr.push(dbIndex[0].Matches[24]);
       mma.fighter(fighter, function(data) {
         fighterArr.push(data);
         mma.fighter(opponent, function(data) {
