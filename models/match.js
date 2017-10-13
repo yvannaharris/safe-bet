@@ -25,8 +25,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Match.associate = function(models) {
-    // We're saying that a Post should belong to an Author
-    // A Post can't be created without an Author due to the foreign key constraint
+
     Match.belongsTo(models.Event, {
       foreignKey: {
         allowNull: false

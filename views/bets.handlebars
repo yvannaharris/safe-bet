@@ -3,14 +3,24 @@
   <div class="container">
     <h1>Safe Bet is your best bet.</h1>
       <p>Review the stats. Place your bets. Collect the karma!</p>
+      {{#unless this.user.username}}
       <p><a class="btn btn-primary btn-lg" href="/sign-in" role="button">Sign In</a></p>
+      {{/unless}}
   </div>
 </div>
 </div>
 
-<div class="main-container">
+{{#if this.user.username}}
+<div class="jumbo-container">
+  <div class="jumbotron">
+  <div class="container">
+    <h3>User: {{this.user.username}}        Karma: {{this.user.karma}}</h3>
+  </div>
+</div>
+</div>
+{{/if}}
 
-<h1>User: {{this.user.username}}  Karma: {{this.user.karma}}</h1>
+<div class="main-container">
 
 <h1>UNCLAIMED BETS</h1>
 
@@ -26,6 +36,9 @@
 			<form action="/karma/{{this.id}}" method="POST">
 		    	<button type="submit" class="btn btn-primary">Claim Karma</button>
 		    </form>
+		    <form action="/delete/{{this.id}}" method="POST">
+		    	<button type="submit" class="btn btn-primary">Delete Bet</button>
+		    </form>
 		</div>
 	</div>
 	{{/unless}}
@@ -36,10 +49,15 @@
 {{#each bets}}
 	{{#if this.karma_received}}
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-10">
 			<h3>{{this.Match.fighter}} over {{this.Match.opponent}}: {{this.Match.result}}</h3>
 			<br>
 			<h3>{{this.amount}}</h3>
+		</div>
+		<div class="col-md-2">
+		    <form action="/clear/{{this.id}}" method="POST">
+		    	<button type="submit" class="btn btn-primary">Clear Bet</button>
+		    </form>
 		</div>
 	</div>
 	{{/if}}
