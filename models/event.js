@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   var Event = sequelize.define("Event", {
-    // Giving the Author model a name of type STRING
     event_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -37,8 +36,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Event.associate = function(models) {
-    // Associating Author with Posts
-    // When an Author is deleted, also delete any associated Posts
+ 
     Event.hasMany(models.Match, {
       onDelete: "cascade"
     });
