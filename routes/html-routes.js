@@ -62,7 +62,7 @@ module.exports = function(app) {
               opponent: fighterArr[1],
               user: {
                 username: req.session.username,
-                id: req.session.id,
+                id: req.session.userid,
                 karma: req.session.karma
               },
               matches: matchesArr,
@@ -188,7 +188,7 @@ module.exports = function(app) {
               opponent: fighterArr[1],
               user: {
                 username: req.session.username,
-                id: req.session.id,
+                id: req.session.userid,
                 karma: req.session.karma
               },
               matches: matchesArr,
@@ -212,13 +212,37 @@ module.exports = function(app) {
       var fightcards = {
         user: {
           username: req.session.username,
-          id: req.session.id,
+          id: req.session.userid,
           karma: req.session.karma
         },
         events: dbEvent
       };
       res.render("fightcards", fightcards);
     })
+  });
+
+  app.get("/userbets", function(req, res) {
+    db.Bet.findAll({
+      where: {
+        UserId: req.session.userid
+      },
+      include: [{
+                model: db.User
+            },
+            {
+                model: db.Match
+            }]
+    }).then(function (dbBet) {
+      var betsObj = {
+        user: {
+          username: req.session.username,
+          id: req.session.userid,
+          karma: req.session.karma
+        },
+        bets: dbBet
+      };
+      res.render("bets", betsObj);
+    });
   });
 
 };
