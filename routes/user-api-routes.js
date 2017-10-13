@@ -29,22 +29,6 @@ module.exports = function(app) {
         });
     });
 
-    app.post("/api/users/", (req, res) => {
-        db.User.create(req.body).then((dbUser) => {
-            res.json(dbUser);
-        });
-    });
-
-    app.delete("/api/users/:id", (req, res) => {
-        db.User.destroy({
-            where: {
-                id: req.params.id
-            }
-        }).then((dbUser) => {
-            res.json(dbUser);
-        });
-    });
-
     app.post("/authenticate", function (req, res) {
         console.log(req.body);
         db.User.findOne({

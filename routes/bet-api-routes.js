@@ -36,30 +36,30 @@ module.exports = function(app) {
         });
     });
 
-    app.post("/api/bets/", (req, res) => {
-        db.Bet.create(req.body).then((dbBet) => {
-            res.json(dbBet);
-        });
-    });
-
-    app.delete("/api/users/:id", (req, res) => {
-        db.User.destroy({
-            where: {
-                id: req.params.id
-            }
-        }).then((dbUser) => {
-            res.json(dbUser);
-        });
-    });
-
     app.post("/bets/:matchid", (req, res) => {
-        db.Bet.create({
-            amount: req.body.amount,
-            UserId: req.session.userid,
-            MatchId: req.params.matchid
-        }).then((dbBet) => {
-            res.redirect("/fightcards");
-        });
+        var result = "";
+        db.Match.findOne({
+            where: {
+                id: req.params.matchid
+            }
+        }).then(function(dbMatch) {
+            result = dbMatch.result;
+            if (req.session.userid == undefined || req.session.userid == "") {
+            res.redirect("/sign-in");
+            }
+            else if (result == "Win" || result == "Loss" || result == "Draw") {
+                res.redirect("/fightcards");
+            }
+            else {
+                db.Bet.create({
+                    amount: req.body.amount,
+                    UserId: req.session.userid,
+                    MatchId: req.params.matchid
+                }).then((dbBet) => {
+                    res.redirect("/fightcards");
+                });
+            }
+        })
     });
 
     app.post("/karma/:id", (req, res) => {
@@ -127,6 +127,45 @@ module.exports = function(app) {
             });
              }
         })
+    });
+
+    app.post("/delete/:betid", function (req, res) {
+        var result = "";
+        db.Bet.findOne({
+            where: {
+                id: req.params.betid
+            },
+            include: [{
+                model: db.User
+            },
+            {
+                model: db.Match
+            }]
+        }).then(function (dbBet) {
+            result = dbBet.Match.result;
+            if (result == "Win" || result == "Loss" || result == "Draw") {
+                res.redirect("/userbets");
+            }
+            else {
+                db.Bet.destroy({
+                    where: {
+                        id: req.params.betid
+                    }
+                }).then(function (dbBet) {
+                    res.redirect("/userbets");
+                });
+            }
+        });
+    });
+
+    app.post("/clear/:betid", function (req, res) {
+        db.Bet.destroy({
+            where: {
+                id: req.params.betid
+            }
+        }).then(function (dbBet) {
+            res.redirect("/userbets");
+        });
     });
 
 }

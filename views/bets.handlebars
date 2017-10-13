@@ -26,6 +26,9 @@
 			<form action="/karma/{{this.id}}" method="POST">
 		    	<button type="submit" class="btn btn-primary">Claim Karma</button>
 		    </form>
+		    <form action="/delete/{{this.id}}" method="POST">
+		    	<button type="submit" class="btn btn-primary">Delete Bet</button>
+		    </form>
 		</div>
 	</div>
 	{{/unless}}
@@ -36,10 +39,15 @@
 {{#each bets}}
 	{{#if this.karma_received}}
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-10">
 			<h3>{{this.Match.fighter}} over {{this.Match.opponent}}: {{this.Match.result}}</h3>
 			<br>
 			<h3>{{this.amount}}</h3>
+		</div>
+		<div class="col-md-2">
+		    <form action="/clear/{{this.id}}" method="POST">
+		    	<button type="submit" class="btn btn-primary">Clear Bet</button>
+		    </form>
 		</div>
 	</div>
 	{{/if}}
