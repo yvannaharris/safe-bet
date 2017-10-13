@@ -45,6 +45,7 @@ require("./routes/event-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 require("./routes/bet-api-routes.js")(app);
+require("./routes/fighters-api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
