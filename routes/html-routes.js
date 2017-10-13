@@ -77,8 +77,11 @@ module.exports = function(app) {
 
   app.get("/sign-in", function (req, res) {
     res.render("sign-in", {
-      username: req.session.username,
-      karma: req.session.karma
+      user: {
+        username: req.session.username,
+        userid: req.session.userid,
+        karma: req.session.karma
+      }
     });
   });
 
