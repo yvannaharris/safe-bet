@@ -3,7 +3,7 @@
   <div class="container">
     <h1>Safe Bet is your best bet.</h1>
       <p>Review the stats. Place your bets. Collect the karma!</p>
-      <p><a class="btn btn-primary btn-lg" href="sign-in" role="button">Sign In</a></p>
+      <p><a class="btn btn-primary btn-lg" href="/sign-in" role="button">Sign In</a></p>
   </div>
 </div>
 </div>
@@ -22,13 +22,13 @@
 			          <li class="record">Record:{{this.fighter.record}}</li>
 			          <li class="age">Age:{{this.fighter.age}}</li>
 			          <li class="height">Height:{{this.fighter.height}}</li>
-			          <li class="weight">Weight:{{this.fighter.weaight}}</li>
+			          <li class="weight">Weight:{{this.fighter.weight}}</li>
 			          <li class="weight_class">Weight Class:{{this.fighter.weight_class}}</li>
-			          <li class="wins_k">Knockouts:{{this.fighter.wins.knockouts}}</li>
-			          <li class="wins_s">Submissions:{{this.fighter.wins.submissions}}</li>
-			          <li class="wins_d">Decisions:{{this.fighter.decisions}}</li>
-			          <li class="strikes_a">Strikes Attempted:{{this.fighter.strikes.attempted}}</li>
-			          <li class="strikes_s">Strikes Successful:{{this.fighter.strikes.successful}}</li>
+			          <li class="wins_k">Knockouts:{{this.fighter.knockouts}}</li>
+			          <li class="wins_s">Submissions:{{this.fighter.submissions}}</li>
+			          <li class="wins_d">Decisions:{{this.fighter.strike_successes}}</li>
+			          <li class="strikes_a">Strikes Attempted:{{this.fighter.decisions}}</li>
+			          <li class="strikes_s">Strikes Successful:{{this.fighter.strike_attempts}}</li>
 			        </ul>
         		</div>
         	</div>
@@ -56,11 +56,11 @@
 			          <li class="height">Height:{{this.opponent.height}}</li>
 			          <li class="weight">Weight:{{this.opponent.weight}}</li>
 			          <li class="weight_class">Weight Class:{{this.opponent.weight_class}}</li>
-			          <li class="wins_k">Knockouts:{{this.opponent.wins.knockouts}}</li>
-			          <li class="wins_s">Submissions:{{this.opponent.wins.submissions}}</li>
-			          <li class="wins_d">Decisions:{{this.opponent.wins.decisions}}</li>
-			          <li class="strikes_a">Strikes Attempted:{{this.opponent.strikes.attempted}}</li>
-			          <li class="strikes_s">Strikes Successful:{{this.opponent.strikes.successful}}</li>
+			          <li class="wins_k">Knockouts:{{this.opponent.knockouts}}</li>
+			          <li class="wins_s">Submissions:{{this.opponent.submissions}}</li>
+			          <li class="wins_d">Decisions:{{this.opponent.strike_successes}}</li>
+			          <li class="strikes_a">Strikes Attempted:{{this.opponent.decisions}}</li>
+			          <li class="strikes_s">Strikes Successful:{{this.opponent.strike_attempts}}</li>
 			        </ul> 
         		</div>
         	</div>

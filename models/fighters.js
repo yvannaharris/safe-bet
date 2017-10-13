@@ -30,6 +30,9 @@ module.exports = function(sequelize, DataTypes) {
         strike_attempts: {
             type: DataTypes.STRING,
         },
+        oldid: {
+            type: DataTypes.INTEGER,
+        },
         strike_successes: {
             type: DataTypes.STRING,
         }
