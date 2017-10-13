@@ -58,7 +58,7 @@ module.exports = function(app) {
             UserId: req.session.userid,
             MatchId: req.params.matchid
         }).then((dbBet) => {
-            res.redirect("/");
+            res.redirect("/fightcards");
         });
     });
 }
