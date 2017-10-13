@@ -2,8 +2,8 @@
 <div class="jumbo-container">
   <div class="jumbotron">
   <div class="container">
-    <h1>Safe Bet is your best bet.</h1>
-      <p>Review the stats. Place your bets. Collect the karma!</p>
+    <h1><div class="brand">Safe Bet</div>is your best bet.</h1>
+      <p class="subtext">Review the stats. Place your bets. Collect the karma!</p>
       <p><a class="btn btn-primary btn-lg" href="sign-in" role="button">Sign In</a></p>
   </div>
 </div>
@@ -11,7 +11,7 @@
 
 <div class="main-container">
   <div class="row">
-    <div class="col-md-offset-3 col-md-4">
+    <div class="col-md-offset-2 col-md-5">
 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front">
@@ -34,10 +34,10 @@
         		</div>
         	</div>
         </div>
-      <form>
+      <form class="form-inline submit-bet">
       	<div class="form-group">
-      		<label for="betInput">Amount</label>
-      		<input type="text" class="bet_amount" placeholder="Bet 	Amount" name="amount">
+      		<label class="bet-amount" for="betInput">Amount</label>
+      		<input type="text" class="bet_amount" placeholder="Enter Bet Amount" name="amount">
       	</div>
       	<button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -66,9 +66,9 @@
         		</div>
         	</div>
         </div>
-      <form>
+      <form class="form-inline submit-bet">
       	<div class="form-group">
-      		<label for="betInput">Amount</label>
+      		<label class="bet-amount" for="betInput">Amount</label>
       		<input type="text" class="bet_amount" placeholder="Enter Bet Amount" name="amount">
       	</div>
       	<button type="submit" class="btn btn-primary">Submit</button>
@@ -81,7 +81,7 @@
      <div class="col-md-offset-1 col-md-10">
 		<div id="other-fights">
 			{{#each matches}}
-				<a class="fights" href="">{{this.matches.fighter}} VS {{this.matches.opponent}}</a>
+				<button class="btn fights"><a href="">{{this.fighter}} VS {{this.opponent}}</a></button>
 			{{/each}}
 		</div> 
 	</div>   
