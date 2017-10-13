@@ -1,0 +1,47 @@
+<div class="jumbo-container">
+  <div class="jumbotron">
+  <div class="container">
+    <h1>Safe Bet is your best bet.</h1>
+      <p>Review the stats. Place your bets. Collect the karma!</p>
+      <p><a class="btn btn-primary btn-lg" href="/sign-in" role="button">Sign In</a></p>
+  </div>
+</div>
+</div>
+
+<div class="main-container">
+
+<h1>OPEN FIGHTCARDS</h1>
+
+{{#each events}}
+	{{#if this.accepting_bets}}
+	<div class="row">
+		<div class="col-md-10">
+			<h3>{{this.event_name}}</h3>
+			<br>
+			<h5>{{this.date}}; {{this.venue}}; {{this.location}}</h5>
+		</div>
+		<div class="col-md-2">
+			<a href="/matches/{{this.id}}/{{this.Matches.0.id}}">View Fights</a>
+		</div>
+	</div>
+	{{/if}}
+{{/each}}
+
+<h1>PAST FIGHTCARDS</h1>
+
+{{#each events}}
+	{{#unless this.accepting_bets}}
+	<div class="row">
+		<div class="col-md-10">
+			<h3>{{this.event_name}}</h3>
+			<br>
+			<h5>{{this.date}}; {{this.venue}}; {{this.location}}</h5>
+		</div>
+		<div class="col-md-2">
+			<a href="/matches/{{this.id}}/{{this.Matches.0.id}}">View Fights</a>
+		</div>
+	</div>
+	{{/unless}}
+{{/each}}
+
+</div>

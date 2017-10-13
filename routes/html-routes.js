@@ -135,6 +135,13 @@ module.exports = function(app) {
   // });
 
   app.get("/matches/:eventid/:matchid", function(req, res) {
+    var tracker = 0;
+    if (parseInt(req.params.matchid) > 23) {
+      tracker = parseInt(req.params.matchid)%24 - 1;
+    }
+    else {
+      tracker = parseInt(req.params.matchid) - 1;
+    }
     db.Event.findAll({
       where: {
         id: req.params.eventid
@@ -144,10 +151,10 @@ module.exports = function(app) {
         model: db.Match
       }]
     }).then(function (dbIndex) {
-      var fighter = dbIndex[0].Matches[req.params.matchid].fighter;
-      var opponent = dbIndex[0].Matches[req.params.matchid].opponent;
-      var fighterMatch = dbIndex[0].Matches[req.params.matchid];
-      var opponentMatch = dbIndex[0].Matches[parseInt(req.params.matchid)-1];
+      var fighter = dbIndex[0].Matches[tracker].fighter;
+      var opponent = dbIndex[0].Matches[tracker].opponent;
+      var fighterMatch = dbIndex[0].Matches[tracker];
+      var opponentMatch = dbIndex[0].Matches[tracker + 1];
       console.log(opponentMatch);
       var fighterArr = [];
       var matchesArr = [];
@@ -193,6 +200,26 @@ module.exports = function(app) {
       })
     })
     });
+
+
+  app.get("/fightcards", function(req,res) {
+    db.Event.findAll({
+      query: {},
+      include: [{
+        model: db.Match
+      }]
+    }).then(function(dbEvent) {
+      var fightcards = {
+        user: {
+          username: req.session.username,
+          id: req.session.id,
+          karma: req.session.karma
+        },
+        events: dbEvent
+      };
+      res.render("fightcards", fightcards);
+    })
+  });
 
 };
 
