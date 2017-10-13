@@ -15,13 +15,16 @@
 {{#each events}}
 	{{#if this.accepting_bets}}
 	<div class="row">
-		<div class="col-md-10">
-			<h3>{{this.event_name}}</h3>
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<h3 id=openfight>{{this.event_name}}<a href="/matches/{{this.id}}/{{this.Matches.0.id}}"></a></h3>
 			<br>
 			<h5>{{this.date}}; {{this.venue}}; {{this.location}}</h5>
 		</div>
 		<div class="col-md-2">
-			<a href="/matches/{{this.id}}/{{this.Matches.0.id}}">View Fights</a>
+			<br>
+			<a href="/matches/{{this.id}}/{{this.Matches.0.id}}"><button>View Fights</button></a>
 		</div>
 	</div>
 	{{/if}}
@@ -32,13 +35,16 @@
 {{#each events}}
 	{{#unless this.accepting_bets}}
 	<div class="row">
-		<div class="col-md-10">
-			<h3>{{this.event_name}}</h3>
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<h3 id=pastfight>{{this.event_name}}</h3>
 			<br>
 			<h5>{{this.date}}; {{this.venue}}; {{this.location}}</h5>
 		</div>
 		<div class="col-md-2">
-			<a href="/matches/{{this.id}}/{{this.Matches.0.id}}">View Fights</a>
+			<br>
+			<a href="/matches/{{this.id}}/{{this.Matches.0.id}}"><button>View Fights</button></a>
 		</div>
 	</div>
 	{{/unless}}
