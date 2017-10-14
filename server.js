@@ -6,6 +6,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
 
 // Sets up the Express App
 // =============================================================
@@ -44,6 +45,7 @@ require("./routes/event-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 require("./routes/bet-api-routes.js")(app);
+require("./routes/fighters-api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
