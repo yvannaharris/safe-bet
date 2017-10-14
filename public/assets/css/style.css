@@ -24,6 +24,8 @@ ul {
 #sign-in-container {
 	background: url('card_background.jpg');
 	padding: 20px;
+	width: 100%;
+	margin-top: 100px;
 }
 
 #sign-in-form {
@@ -36,6 +38,7 @@ ul {
 
 h1 {
 	font-weight: bold;
+	color: #00327E;
 }
 
 .subtext {
@@ -47,6 +50,7 @@ h1 {
 
 	background: url('../images/card_background.jpg');
 	padding: 20px;
+	margin: auto;
 
 }
 
@@ -87,7 +91,7 @@ h1 {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
-	border: 6px solid #00327E;
+	border: 6px solid #ffaf23;
 }
 
 /* back, initially hidden pane */
@@ -165,16 +169,33 @@ h2 {
 }
 
 
-h1, h5 {
-	color: #379b43;
+h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
 }
 
 #openfight, 
 #pastfight, 
 #unclaimed, 
 #claimed {
-	color: #59d1c3;
 	text-align: center;
-	border: 2px solid red;
-    border-radius: 8px;
+    border-radius: 5px;
+    background:#ffaf23;
+    padding: 10px;
+}
+
+.info-container {
+	background: url('../images/card_background.jpg');
+	margin: auto;
+	width: 80%;
+	padding: 20px;
+	min-height: 600px
+}
+
+#signin-link {
+    background:#ffaf23;
+	color:#00327E;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 5px;
 }
