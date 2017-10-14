@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "Qcpmr_019$$$",
+    "password": "",
     "database": "testmma",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Qcpmr_019$$$",
+    "password": "",
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
