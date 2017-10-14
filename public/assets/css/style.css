@@ -1,5 +1,6 @@
 body {
 	background: url('../images/background.jpg');
+	font-family: 'Roboto Slab', serif;
 }
 .card {
     /* Add shadows to create the "card" effect */
@@ -21,19 +22,32 @@ ul {
 }
 
 #sign-in-container {
+	background: url('card_background.jpg');
+	padding: 20px;
+}
+
+#sign-in-form {
+	margin-top: 20px;
+}
+
+.jumbo-container {
+	margin-top: 30px;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.subtext {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+#sign-in-container {
 
 	background: url('../images/card_background.jpg');
 	padding: 20px;
 
-}
-
-#lesser-fights {
-	background: white;
-}
-
-.bet-status {
-	background: #08EA01;
-	border-radius: 50%;
 }
 
 /* entire container, keeps perspective */
@@ -73,6 +87,7 @@ ul {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
+	border: 6px solid #00327E;
 }
 
 /* back, initially hidden pane */
@@ -92,6 +107,63 @@ img {
 	text-align: center;
 	font-size: 28px;
 }
+
+.submit-bet {
+	margin-top: 15px;
+
+}
+
+.bet-amount {
+	color: #ffffff;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.btn {
+	background: #00327E;
+	border: #000000;
+	color: #ffffff;
+}
+
+.btn:hover {
+	background: #00327E;
+	color: #ffffff;
+}
+
+
+.fights{
+	background: #00327E;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ffaf23;
+}
+
+#other-fights {
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 40px;
+	color:#00327E ;
+	font-weight: bold;
+}
+
+.brand {
+	color: #ffaf23;
+	float: left;
+	margin-right: 20px;
+}
+
 
 h1, h5 {
 	color: #379b43;
