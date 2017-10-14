@@ -169,7 +169,10 @@ h1, h5 {
 	color: #379b43;
 }
 
-#openfight, #pastfight {
+#openfight, 
+#pastfight, 
+#unclaimed, 
+#claimed {
 	color: #59d1c3;
 	text-align: center;
 	border: 2px solid red;
