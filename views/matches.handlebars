@@ -1,0 +1,103 @@
+{{#unless this.user.username}}
+<div class="jumbo-container">
+  <div class="jumbotron">
+  <div class="container">
+    <h1><div class="brand">Safe Bet</div>is your best bet.</h1>
+      <p class="subtext">Review the stats. Place your bets. Collect the karma!</p>
+      <p><a class="btn btn-primary btn-lg" href="sign-in" role="button">Sign In</a></p>
+  </div>
+</div>
+</div>
+{{/unless}}
+
+
+<div class="main-container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-5">
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="/assets/images/{{this.fighter.name}}.png" alt="Avatar" style="width:300">
+					<h3 class="fighter-name">{{this.fighter.name}}</h3>
+				</div>
+				<div class="back">
+			        <ul class="stats">
+			          <li class="record">Record:{{this.fighter.record}}</li>
+			          <li class="age">Age:{{this.fighter.age}}</li>
+			          <li class="height">Height:{{this.fighter.height}}</li>
+			          <li class="weight">Weight:{{this.fighter.weight}}</li>
+			          <li class="weight_class">Weight Class:{{this.fighter.weight_class}}</li>
+			          <li class="wins_k">Knockouts:{{this.fighter.knockouts}}</li>
+			          <li class="wins_s">Submissions:{{this.fighter.submissions}}</li>
+			          <li class="wins_d">Decisions:{{this.fighter.strike_successes}}</li>
+			          <li class="strikes_a">Strikes Attempted:{{this.fighter.decisions}}</li>
+			          <li class="strikes_s">Strikes Successful:{{this.fighter.strike_attempts}}</li>
+			        </ul>
+        		</div>
+        	</div>
+        </div>
+      <form class="form-inline submit-bet" action="/bets/{{fMatch.id}}" method="POST">
+      	<div class="form-group">
+      		<label class="bet-amount" for="betInput">Amount</label>
+      		<input type="text" class="bet_amount" placeholder="Enter Bet Amount" name="amount">
+      	</div>
+      	<button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+    <div class="col-md-4">
+ 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<img src="/assets/images/{{this.opponent.name}}.png" alt="Avatar" style="width:300">
+					<h3 class="fighter-name">{{this.opponent.name}}</h3>
+				</div>
+				<div class="back">
+			        <ul class="stats">
+			          <li class="record">Record:{{this.opponent.record}}</li>
+			          <li class="age">Age:{{this.opponent.age}}</li>
+			          <li class="height">Height:{{this.opponent.height}}</li>
+			          <li class="weight">Weight:{{this.opponent.weight}}</li>
+			          <li class="weight_class">Weight Class:{{this.opponent.weight_class}}</li>
+			          <li class="wins_k">Knockouts:{{this.opponent.knockouts}}</li>
+			          <li class="wins_s">Submissions:{{this.opponent.submissions}}</li>
+			          <li class="wins_d">Decisions:{{this.opponent.strike_successes}}</li>
+			          <li class="strikes_a">Strikes Attempted:{{this.opponent.decisions}}</li>
+			          <li class="strikes_s">Strikes Successful:{{this.opponent.strike_attempts}}</li>
+			        </ul> 
+        		</div>
+        	</div>
+        </div>
+      <form class="form-inline submit-bet" action="/bets/{{oMatch.id}}" method="POST">
+      	<div class="form-group">
+      		<label class="bet-amount" for="betInput">Amount</label>
+      		<input type="text" class="bet_amount" placeholder="Enter Bet Amount" name="amount">
+      	</div>
+      	<button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="row">
+     <div class="col-md-offset-1 col-md-10">
+		<div id="other-fights">
+		<div class="row">
+			{{#each matches}}
+			<div class="col-md-4">
+				<form action="/matches/{{this.EventId}}/{{this.id}}">
+				<input type="submit" value="{{this.fighter}} VS {{this.opponent}}" class="btn fights"></input>
+				</form>
+			</div>
+			{{/each}}
+		</div>
+		</div> 
+	</div>   
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+

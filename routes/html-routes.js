@@ -146,7 +146,7 @@ module.exports = function(app) {
               fMatch: fighterMatch,
               oMatch: opponentMatch
            };
-           res.render("index", fighters);
+           res.render("matches", fighters);
         });
       })
     })
